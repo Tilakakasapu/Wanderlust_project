@@ -104,7 +104,6 @@ app.get('/', (req, res) => {
 // })
 
 app.all('*',(req,res,next)=>{
-    return res.send(req);
     next(new ExpressError(404,"Page Not Found")); 
    })
 
