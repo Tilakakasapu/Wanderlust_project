@@ -1,0 +1,91 @@
+<!-- <% layout('/layouts/boilerplate.ejs') %>
+<body>  
+    <h2>Edit your Lisitng</h2>
+    <br>
+
+    <form action="/listings/<%=obj._id %>?_method=put" method="post">
+        <h2>edit this listing</h2>
+        <input type="text" name="list[title]" value="<%= obj.title %>"> <br>
+
+        <input type="text" name="list[description]" value="<%= obj['description'] %>"><br>
+
+        <input type="text" name="list[image]"  value="<%= obj.image.url %>" ><br>
+
+        <input type="text" name='list[price]'  type="number" value="<%= obj.price %>"> 
+        <br>
+        <input type="text" name ='list[location]' value="<%= obj.location %>"> <br>
+        <input type="text" name="list[country]"  value="<%= obj.country %>">
+        <br>
+        <button>submit</button>
+    </form>
+    
+</body> -->
+
+
+<% layout('/layouts/boilerplate.ejs') %>
+<body>  
+    <% console.log(obj.description)%>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br><br>
+            <h2>Edit your Listing</h2>
+            <br>
+            <form action="/listings/<%= obj._id %>?_method=put" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="list[title]" value="<%= obj.title %>" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid Title.
+                      </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" name="list[description]" class="form-control" value="<%= obj.description %>" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid Description.
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <h5>Original Image</h5>
+                    <img src="<%= original %>" >
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload new Image</label>
+                    <input type="file" name="list[image]" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please Add a image.
+                      </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" name="list[price]" value="<%= obj.price %>" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid Price.
+                          </div>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" name="list[location]" value="<%= obj.location %>" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid Location.
+                          </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" name="list[country]" value="<%= obj.country %>" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid Country.
+                      </div>
+                </div>
+                <button style="border-radius: 5px; outline: none; color: white; background: #000;">Submit</button>
+            </form>
+            <br><br>
+        </div>
+    </div>
+</body>

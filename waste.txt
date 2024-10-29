@@ -1,0 +1,7 @@
+ <% if(curuser && curuser._id.equals(one_Data.owner._id)) {%>
+ <%}%>
+
+
+
+
+ 
