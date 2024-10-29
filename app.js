@@ -91,8 +91,11 @@ app.use('/listings/:id/reviews',rev_route);
 app.use('/listing/:id/reviews',rev_route);
 app.use('/listings',listing_route); 
 app.use('/listing',listing_route);
-app.use('/',user_route)
+app.use('/',listing_route)
 
+app.get('/', (req, res) => {
+  res.send("Welcome to Wanderlust!");
+});
 
 
 
