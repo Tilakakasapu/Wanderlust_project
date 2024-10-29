@@ -3,7 +3,7 @@ const ExpressError = require('../utils/Expresserror');
 const {listingschema , reviewSchema} = require('../schema.js');
 module.exports.index = async (req,res)=>{
     const allListings = await listing.find({});
-    res.render('listings/index.ejs',{allListings});
+    res.render('listings//index.ejs',{allListings});
 }
 
 module.exports.rendernew = (req,res)=>{
