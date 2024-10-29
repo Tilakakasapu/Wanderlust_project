@@ -13,7 +13,7 @@ router.post('/signup',user_cont.signup);
 
 router.get('/login',user_cont.renderlogin);
 
-router.post('/login',saveRedirectUrl,passport.authenticate('local',{failureFlash:true,failureRedirect:'/login'}),user_cont.login)
+router.post('/login',saveRedirectUrl,passport.authenticate('local',{failureFlash:true,failureRedirect:'/user/login'}),user_cont.login)
 
 router.get('/logout',user_cont.logout);
 
