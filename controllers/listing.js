@@ -7,7 +7,7 @@ module.exports.index = async (req,res)=>{
 }
 
 module.exports.rendernew = (req,res)=>{
-    res.render('listings\\new.ejs');
+    res.render('listings//new.ejs');
 }
 
 module.exports.createnew = async (req,res,next)=>{
