@@ -101,6 +101,7 @@ app.use('/',user_route)
 // })
 
 app.all('*',(req,res,next)=>{
+    res.send(req);
     next(new ExpressError(404,"Page Not Found")); 
    })
 
