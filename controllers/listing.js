@@ -10,6 +10,7 @@ module.exports.rendernew = (req,res)=>{
     res.render('listings//new.ejs');
 }
 
+
 module.exports.createnew = async (req,res,next)=>{
     console.log(req.body);
     const requestBody = Object.assign({}, req.body);
