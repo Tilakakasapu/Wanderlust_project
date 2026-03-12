@@ -132,11 +132,7 @@ MajorProject/
 
 ---
 
-## 🖼️ Demo Screenshot
 
-![Wanderlust Dashboard](C:\Users\tilak\.gemini\antigravity\brain\ca068809-54ea-4cd5-a0c6-0ed05634bdcf\full_page_localhost_8080_1773290222567.png)
-
----
 
 ## 🗺️ Roadmap & Future Improvements
 
@@ -146,19 +142,6 @@ MajorProject/
 - [ ] **Payment Integration**: Implement a secure checkout using Stripe.
 
 ---
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
 ## ⚖️ License
 
 Distributed under the **ISC License**. See `LICENSE` for more information.
@@ -173,3 +156,4 @@ Distributed under the **ISC License**. See `LICENSE` for more information.
 
 ---
 *Developed with ❤️ for the Web Development Community.*
+
